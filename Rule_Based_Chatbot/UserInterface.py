@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import scrolledtext
-from Assignment5_Intent import Intents
-from Assignment5_Generate_Response import chatbot_response
+from Intent import Intents
+from Generate_Response import chatbot_response
 from nltk.chat.util import Chat
 
 # Logic --> Define Global Var
