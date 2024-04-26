@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import scrolledtext
-from Intent2 import Intents
 from Generate_Response import chatbot_response
 
 '''
@@ -75,7 +74,7 @@ def add_message(event, txt_query, txt_chat):
         conversation_history += conversation
 
         # Trigger the executing ruled_based chatbot functionality
-        response = rule_based_chatbot(user_input)
+        response = AI_based_chatbot(user_input)
 
         # Trigger the calling of Chatbot Response
         add_response(None, txt_chat, response)

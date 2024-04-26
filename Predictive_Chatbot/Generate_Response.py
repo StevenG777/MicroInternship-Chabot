@@ -2,7 +2,7 @@
 import numpy as np
 import random
 import pickle
-from Intent import Intents
+from Intent2 import Intents
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model

@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import scrolledtext
 from Intent import Intents
-from Generate_Response import chatbot_response
 from nltk.chat.util import Chat
 
 # Logic --> Define Global Var
@@ -93,6 +92,9 @@ def clear_conversation(event, txt_chat):
 
 # Logic --> Execute ruled-based chatbot
 def rule_based_chatbot(query_message):
+    # placeholder Var, has to be used in order to run for NLTK chat to run properly
+    reflections = { "PlaceHolder": "" }
+
     # Generate pairs of Pattern & Response
     pairs = []
     for Intent in Intents:
@@ -100,7 +102,7 @@ def rule_based_chatbot(query_message):
             pairs.append((pattern, Intent["responses"]))
 
     # Initialized the NLTK chat object and run it
-    chat = Chat(pairs)
+    chat = Chat(pairs, reflections)
     res = chat.respond(query_message)
     return res
 
