@@ -4,19 +4,6 @@ from Assignment5_Intent import Intents
 from Assignment5_Generate_Response import chatbot_response
 from nltk.chat.util import Chat
 
-'''
-Reference
-- Pattern/Intent:
-    - https://github.com/Ramakm/AI-Chatbot/blob/main/intents.json
-    - https://www.kaggle.com/datasets/elvinagammed/chatbots-intent-recognition-dataset
-    - OpenAI. (2024). ChatGPT (3.5) [Large language model]. https://chat.openai.com
-- Deep Neural Networking Code
-    - https://www.tensorflow.org/guide/keras/sequential_model#when_to_use_a_sequential_model
-    - https://www.tensorflow.org/guide/keras/working_with_rnns#train_the_model_with_randomly_generated_data
-    - https://medium.com/@ramakrushnamohapatra/create-an-ai-chatbot-from-scratch-738ea385d108
-    - OpenAI. (2024). ChatGPT (3.5) [Large language model]. https://chat.openai.com
-'''
-
 # Logic --> Define Global Var
 last_text_length = 0
 conversation_history = ""
