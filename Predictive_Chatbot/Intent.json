@@ -1,0 +1,105 @@
+{
+    "intents": [
+        {
+            "intent": "greetings",
+            "patterns": [
+                "hi",
+                "hi there",
+                "hola",
+                "hello",
+                "hello there",
+                "hya",
+                "hya there",
+                "good morning",
+                "good afternoon",
+                "good evening"
+            ],
+            "response": [
+                "Hello thanks for checking in", 
+                "Hello! How can I assist you today?",
+                "Hi there! How can I help you?",
+                "Hey! What can I do for you?"
+            ]
+        },
+        {
+            "intent": "goodbye",
+            "patterns": [
+                "bye", 
+                "good bye", 
+                "see you later",
+                "farewell",
+                "take care"
+            ],
+            "responses": [
+                "Have a nice time, welcome back again", 
+                "Bye bye",
+                "Goodbye! Feel free to ask for course recommendations anytime.",
+                "See you later! If you need more help, just let me know.",
+                "Farewell! Don't hesitate to return if you have more questions."
+            ]
+        },
+        {
+            "intent": "thanks",
+            "patterns": [
+                "thanks",
+                "thanks a lot",
+                "thank you so much",
+                "thanks for your help", 
+                "okay",
+                "thank you",
+                "thankyou", 
+                "that's helpful", 
+                "awesome, thanks", 
+                "thanks for helping me", 
+                "wow", 
+                "great"
+            ],
+            "responses": [
+                "Happy to help!", 
+                "Any time!",
+                "You're welcome",
+                "You're welcome. If you have any more questions, feel free to ask!", 
+                "My pleasure",
+                "Anytime!",
+                "Glad I could assist you!",
+                "No problem, happy to help!"
+            ]
+        },
+        {
+            "intention": "identity",
+            "patterns": [
+                "what's your name?",
+                "who are you?",
+                "what are you?",
+                "tell me about yourself",
+                "can you introduce yourself?"
+            ],
+            "responses": [
+                "I'm the UC Merced Computer Science Course Recommendation Chatbot. My purpose is to help you find suitable courses for your academic journey.",
+                "I'm your friendly UC Merced Computer Science Course Recommendation Chatbot. Feel free to ask me anything related to courses!",
+                "I'm the UC Merced Computer Science Course Recommendation Chatbot. You can ask me about computer science courses available at UC Merced."
+            ]
+        },
+        {
+            "intent": "recommendation",
+            "patterns": [
+              "recommend a course on {topic}",
+              "what courses do you suggest for {topic}?",
+              "can you recommend a course related to {topic}?",
+              "I'm interested in learning about {topic}, any course recommendations?",
+              "suggest a course in {topic}"
+            ],
+            "responses": [
+              "Sure! How about {course_name}? It covers {course_description}.",
+              "You might find {course_name} interesting. It covers {course_description}.",
+              "Consider taking {course_name}. It covers {course_description}.",
+              "{course_name} could be a good fit. It covers {course_description}."
+            ]
+        },
+        {
+            "intent": "other",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"]
+        }
+    ]
+}
