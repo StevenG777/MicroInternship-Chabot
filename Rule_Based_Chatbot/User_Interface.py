@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import scrolledtext
-from Intent import Intents
+from Intents import Intents
 from nltk.chat.util import Chat
 
 # Logic --> Define Global Var
@@ -136,7 +136,7 @@ lbl_title.pack(expand=True, fill=tk.BOTH)
 frm_chat = tk.Frame(master=window)
 frm_chat.grid(row=1, column=0, columnspan=columnSpan, padx=padX, pady=padY, sticky="nsew")
 
-txt_chat = scrolledtext.ScrolledText(master=frm_chat, font=fontText, state="disabled", fg=textColor, bg=backgroundColor)
+txt_chat = scrolledtext.ScrolledText(master=frm_chat, font=fontText, wrap="word", state="disabled", fg=textColor, bg=backgroundColor)
 txt_chat.pack(expand=True, fill=tk.BOTH)
 
 # UI --> Set up Query Element
@@ -153,7 +153,6 @@ btn_clear = tk.Button(master=frm_query, text="Clear Conversation", highlightback
 btn_clear.pack(side=tk.LEFT, padx=(5, 0))
 
 # Logic --> Define Event Handling Actions
-# txt_chat.bind("<Configure>", lambda event, txt_chat=txt_chat: add_response(event, txt_chat))
 txt_query.bind("<KeyRelease>", lambda event, txt_query=txt_query: resize_input_text(event, txt_query))
 btn_submit.bind("<Button>", lambda event, txt_query=txt_query, txt_chat=txt_chat: add_message(event, txt_query, txt_chat))
 btn_clear.bind("<Button>", lambda event, txt_chat = txt_chat: clear_conversation(event, txt_chat))

@@ -9,7 +9,7 @@ Intents = [
                 "Hello %2! thanks for checking in", 
                 "Hello %2! How can I assist you today?",
                 "Hi %2! How can I help you?",
-                "Hi there! How can I help you?"
+                "Hi there! How can I help you?",
                 "Hey %2! What can I do for you?"
             ]
         },
